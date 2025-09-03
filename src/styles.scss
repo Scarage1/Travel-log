@@ -1,0 +1,106 @@
+@import "assets/styles/media", "assets/styles/typography",
+  "assets/styles/commons", "assets/styles/mixins", "assets/styles/colors";
+
+// Global styles
+app-root {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+travel-log-footer {
+  margin-top: auto;
+}
+
+router-outlet {
+  position: absolute;
+}
+
+section {
+  @include vertical-padding;
+  @include gutters;
+}
+
+// Resets
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+}
+* {
+  font-family: "Montserrat", "Roboto", sans-serif;
+}
+html {
+  box-sizing: border-box;
+  color: $black;
+}
+
+app-root {
+  background-color: $dark;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+html,
+body,
+div,
+form,
+fieldset,
+legend,
+caption,
+label,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre {
+  font-weight: normal;
+
+  margin: 0;
+  padding: 0;
+
+  vertical-align: baseline;
+
+  border: 0;
+  outline: 0;
+  background: transparent;
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  text-align: left;
+  vertical-align: top;
+}
+
+img {
+  border: 0;
+}

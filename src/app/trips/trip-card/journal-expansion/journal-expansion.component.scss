@@ -1,0 +1,22 @@
+@import "src/assets/styles/colors";
+:host {
+  mat-expansion-panel {
+    margin-top: 50px;
+    mat-expansion-panel-header {
+      background-color: $color-primary;
+    }
+    ::ng-deep .mat-expansion-panel-content {
+      background: $color-white;
+      color: $dark;
+    }
+  }
+
+  li {
+    .journal-date-label {
+      font-weight: bold;
+    }
+    &:not(:last-of-type) {
+      margin-bottom: 15px;
+    }
+  }
+}

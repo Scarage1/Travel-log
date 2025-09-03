@@ -1,0 +1,23 @@
+@import "../../assets/styles/colors", "../../assets/styles/media",
+  "../../assets/styles/mixins";
+
+footer {
+  @include hover-animation($black);
+  @include text-xs;
+
+  background-color: $color-accent;
+
+  padding: 10px 15px;
+
+  color: $black;
+  @include mq-md {
+    padding: 20px 60px;
+  }
+  @include gutters;
+
+  small {
+    display: block;
+    margin-left: auto;
+    width: fit-content;
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "ng-travel-logger": {
+      "hosting": {
+        "travel-logger": [
+          "ng-travel-logger"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "ng-travel-logger"
+  }
+}

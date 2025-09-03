@@ -1,0 +1,16 @@
+mat-sidenav-container,
+mat-sidenav-content,
+mat-sidenav {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+::ng-deep mat-sidenav {
+  width: min(300px, 100%);
+  > .mat-drawer-inner-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}

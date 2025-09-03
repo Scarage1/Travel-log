@@ -1,0 +1,42 @@
+@import "../../../assets/styles/mixins";
+@import "../../../assets/styles/media";
+
+:host {
+  width: 100%;
+  .card.mat-card {
+    // Showing progress bar at the bottom
+    position: relative;
+    overflow: hidden;
+
+    width: 100%;
+    max-width: 500px;
+
+    padding: 25px 15px;
+    @include mq-xs {
+      padding: 40px 30px;
+    }
+    margin: 0 auto;
+
+    mat-card-header {
+      mat-card-title.card-title {
+        margin-bottom: 0;
+        display: flex;
+        align-items: center;
+        mat-icon {
+          height: fit-content;
+          width: fit-content;
+          margin-right: 15px;
+        }
+      }
+      @include header-bottom-margin;
+    }
+    mat-card-footer {
+      margin: 0;
+      mat-progress-bar {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+@import "src/assets/styles/typography";
+
+:host  {
+  width: 100%;
+
+  .auth-button {
+    margin-left: auto;
+  }
+
+  #mobile-header {
+    .burger-menu {
+      margin-right: 1rem;
+    }
+    .logo {
+      font-family: "SonsieOne", sans-serif;
+      font-size: 16px;
+      letter-spacing: 1px;
+    }
+    .login-button,
+    .logout-button {
+      margin-left: auto;
+    }
+  }
+  #desktop-header {
+    .header-texts {
+      display: flex;
+      align-items: baseline;
+      .logo {
+        font-family: "SonsieOne", sans-serif;
+        font-size: 28px;
+        letter-spacing: 1px;
+
+        margin-right: 1rem;
+      }
+      span {
+        margin-left: 10px;
+        font-size: 14px;
+        opacity: 0.8;
+      }
+    }
+    mat-nav-list {
+      padding: 0;
+      a {
+        font-size: $btn-fs;
+        font-weight: $btn-fw;
+      }
+    }
+  }
+}
